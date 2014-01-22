@@ -40,11 +40,13 @@ normalizing.
 
 Install using one of the following methods:
 
-Download from the [project page](https://github.com/JohnAlbin/normalize.css-with-sass-or-compass/).
+Download from the [project page](https://github.com/JohnAlbin/normalize.css-with-sass-or-compass/releases).
 
-Install with [Bower](http://bower.io/): `bower install --save normalize.scss`
+Install with [Bower](http://bower.io/): `bower install --save normalize.scss` (or to install the latest pre-release version: `bower install --save normalize.scss#3.0.0-alpha.1+normalize.2.1.3`)
 
 Install with [Component(1)](http://component.io/): `component install JohnAlbin/normalize.css-with-sass-or-compass`
+
+Install with [Ruby Gem](https://rubygems.org/gems/normalize-scss): `sudo gem install normalize-scss` (or to install the latest pre-release version: `sudo gem install --pre normalize-scss`)
 
 ## What does it do?
 
