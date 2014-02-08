@@ -6,10 +6,11 @@ They both combine normalize.css v2.1.3 and normalize v1.1.3.
 
 ## The Compass port of normalize.css
 
-__This project is the Sass/Compass port of normalize.css.__ It aims to use the best
-partials from Compass to make normalize even easier to integrate with your
-website. To learn about why Normalize.css is so amazing, skip to the
-"normalize.css" section below.
+__This project is the Sass/Compass version of Normalize.css__, a collection of HTML
+element and attribute rulesets to normalize styles across all browsers. This
+port aims to use the best partials from Compass to make Normalize even easier to
+integrate with your website. To learn about why Normalize.css is so amazing,
+skip to the "normalize.css" section below.
 
 This Sass/Compass port currently utilizes:
 
