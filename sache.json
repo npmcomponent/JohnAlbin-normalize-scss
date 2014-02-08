@@ -1,0 +1,5 @@
+{
+  "name": "Normalize-scss",
+  "description": "The Sass/Compass version of Normalize.css. This port tracks the parent project very closely. It aims to use the best partials from Compass to make normalize even easier to integrate with your website.",
+  "tags": ["normalize", "reset", "typography", "design", "ui"]
+}
