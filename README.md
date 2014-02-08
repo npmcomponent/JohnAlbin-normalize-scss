@@ -1,7 +1,7 @@
 ## Latest downloadable version
 
-The latest release of _normalize.scss for Sass 3.3 and Compass 1.0 is: [3.0.0-alpha.1+normalize.2.1.3](https://github.com/JohnAlbin/normalize.css-with-sass-or-compass/releases/tag/3.0.0-alpha.1%2Bnormalize.2.1.3).
-The latest release of _normalize.scss for Sass 3.2 and Compass 0.12 is: [2.2.0+normalize.2.1.3](https://github.com/JohnAlbin/normalize.css-with-sass-or-compass/releases/tag/2.2.0%2Bnormalize.2.1.3).
+The latest release of _normalize.scss for Sass 3.3 and Compass 1.0 is: [3.0.0-alpha.1+normalize.2.1.3](https://github.com/JohnAlbin/normalize-scss/releases/tag/3.0.0-alpha.1%2Bnormalize.2.1.3).
+The latest release of _normalize.scss for Sass 3.2 and Compass 0.12 is: [2.2.0+normalize.2.1.3](https://github.com/JohnAlbin/normalize-scss/releases/tag/2.2.0%2Bnormalize.2.1.3).
 They both combine normalize.css v2.1.3 and normalize v1.1.3.
 
 ## The Compass port of normalize.css
@@ -41,11 +41,11 @@ normalizing.
 
 Install using one of the following methods:
 
-Download from the [project page](https://github.com/JohnAlbin/normalize.css-with-sass-or-compass/releases).
+Download from the [project page](https://github.com/JohnAlbin/normalize-scss/releases).
 
 Install with [Bower](http://bower.io/): `bower install --save normalize.scss` (or to install the latest pre-release version: `bower install --save normalize.scss#3.0.0-alpha.1+normalize.2.1.3`)
 
-Install with [Component(1)](http://component.io/): `component install JohnAlbin/normalize.css-with-sass-or-compass`
+Install with [Component(1)](http://component.io/): `component install JohnAlbin/normalize-scss`
 
 Install with [Ruby Gem](https://rubygems.org/gems/normalize-scss): `sudo gem install normalize-scss` (or to install the latest pre-release version: `sudo gem install --pre normalize-scss`)
 
@@ -93,7 +93,7 @@ guidelines](CONTRIBUTING.md).
 
 Updates to most CSS rules should be reported to Necolas' upstream [Normalize.css
 project](http://necolas.github.com/normalize.css/). Updates to the Sass should
-be reported in the [Normalize.css with Sass and Compass project](https://github.com/JohnAlbin/normalize.css-with-sass-or-compass/).
+be reported in the [Normalize-scss project](https://github.com/JohnAlbin/normalize-scss/).
 
 ## Acknowledgements
 
@@ -116,4 +116,4 @@ Some of the above projects convert normalize into Sass mixins. That makes it
 impossible to add Normalize using __Approach 1__ (by copying the file into your website
 and customizing/overriding for your needs.)
 
-[![Build Status](https://travis-ci.org/JohnAlbin/normalize.css-with-sass-or-compass.png?branch=master)](https://travis-ci.org/JohnAlbin/normalize.css-with-sass-or-compass)
+[![Build Status](https://travis-ci.org/JohnAlbin/normalize-scss.png?branch=master)](https://travis-ci.org/JohnAlbin/normalize-scss)
