@@ -9,7 +9,11 @@
   "description": "This is the Sass/Compass version of Normalize.css, a collection of HTML element and attribute rulesets to normalize styles across all browsers.",
   "main": "_normalize.scss",
   "keywords": [
-    "normalize.css"
+    "normalize",
+    "reset",
+    "typography",
+    "design",
+    "ui"
   ],
   "license": [
     "MIT",
@@ -17,10 +21,12 @@
   ],
   "ignore": [
     "CHANGELOG.md",
-    "CONTRIBUTING.md",
     "component.json",
+    "CONTRIBUTING.md",
     "normalize-scss.gemspec",
-    "lib/normalize-scss.rb",
-    "test.html"
+    "sache.json",
+    "test.html",
+    "lib",
+    "tests"
   ]
 }
