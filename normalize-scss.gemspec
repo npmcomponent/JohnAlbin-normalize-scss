@@ -21,14 +21,11 @@ Gem::Specification.new do |s|
 
   s.files       = %w[
     _normalize.scss
-    bower.json
     CHANGELOG.md
-    component.json
     CONTRIBUTING.md
     lib/normalize-scss.rb
     LICENSE.md
     normalize-scss.gemspec
     README.md
-    test.html
   ]
 end
