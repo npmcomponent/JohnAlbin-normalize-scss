@@ -1,8 +1,8 @@
 ## Latest downloadable version
 
-The latest release of _normalize.scss for Sass 3.3 and Compass 1.0 is: [3.0.0-alpha.1+normalize.2.1.3](https://github.com/JohnAlbin/normalize-scss/releases/tag/3.0.0-alpha.1%2Bnormalize.2.1.3).
-The latest release of _normalize.scss for Sass 3.2 and Compass 0.12 is: [2.2.0+normalize.2.1.3](https://github.com/JohnAlbin/normalize-scss/releases/tag/2.2.0%2Bnormalize.2.1.3).
-They both combine normalize.css v2.1.3 and normalize v1.1.3.
+The latest release of _normalize.scss for Sass 3.3 and Compass 1.0 is: [3.0.0-alpha.1+normalize.3.0.0](https://github.com/JohnAlbin/normalize-scss/releases/tag/3.0.0-alpha.1%2Bnormalize.3.0.0).
+The latest release of _normalize.scss for Sass 3.2 and Compass 0.12 is: [2.2.0+normalize.2.1.3(https://github.com/JohnAlbin/normalize-scss/releases/tag/2.2.0%2Bnormalize.2.1.3).
+They both combine normalize.css v3.0.0 and normalize v1.1.3.
 
 ## The Compass port of normalize.css
 
@@ -26,7 +26,7 @@ the two versions using Compass' `$legacy-support-for-ie7` variable.
 Did a client wait until the last minute to mention their CEO uses IE 7? Simply
 set `$legacy-support-for-ie7` to `true` and recompile your Sass files.
 
-# normalize.css v2
+# normalize.css v3
 
 Normalize.css is a customisable CSS file that makes browsers render all
 elements more consistently and in line with modern standards.
@@ -35,7 +35,7 @@ The project relies on researching the differences between default browser
 styles in order to precisely target only the styles that need or benefit from
 normalizing.
 
-[Check out the demo](http://necolas.github.io/normalize.css/latest/test.html)
+[View the test file](http://necolas.github.io/normalize.css/latest/test.html)
 
 ## Install
 
@@ -43,7 +43,7 @@ Install using one of the following methods:
 
 Download from the [project page](https://github.com/JohnAlbin/normalize-scss/releases).
 
-Install with [Bower](http://bower.io/): `bower install --save normalize.scss` (or to install the latest pre-release version: `bower install --save normalize.scss#3.0.0-alpha.1+normalize.2.1.3`)
+Install with [Bower](http://bower.io/): `bower install --save normalize.scss` (or to install the latest pre-release version: `bower install --save normalize.scss#3.0.0-alpha.1+normalize.3.0.0`)
 
 Install with [Component(1)](http://component.io/): `component install JohnAlbin/normalize-scss`
 
@@ -74,10 +74,11 @@ the defaults later in your Sass if necessary.
 
 ## Browser support
 
-* Google Chrome
-* Mozilla Firefox 4+
-* Apple Safari 5+
-* Opera 12+
+* Google Chrome (latest)
+* Mozilla Firefox (latest)
+* Mozilla Firefox 4
+* Opera (latest)
+* Apple Safari 6+
 * Internet Explorer 8+
 * Internet Explorer 6-7 (when `$legacy-support-for-ie7` or
 `$legacy-support-for-ie6` is set to `true`)
