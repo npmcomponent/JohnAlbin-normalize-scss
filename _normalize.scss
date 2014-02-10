@@ -117,23 +117,25 @@ body {
 /* HTML5 display definitions
    ========================================================================== */
 
-/**
- * Correct `block` display not defined in IE 8/9.
- */
+@if support-legacy-browser(ie, "9") {
+  /**
+   * Correct `block` display not defined in IE 8/9.
+   */
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block;
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  main,
+  nav,
+  section,
+  summary {
+    display: block;
+  }
 }
 
 /**
@@ -145,12 +147,14 @@ audio,
 canvas,
 progress,
 video {
-  display: inline-block; /* 1 */
-  vertical-align: baseline; /* 2 */
-  @if support-legacy-browser(ie, "7") {
-    *display: inline;
-    *zoom: 1;
+  @if support-legacy-browser(ie, "9") {
+    display: inline-block; /* 1 */
+    @if support-legacy-browser(ie, "7") {
+      *display: inline;
+      *zoom: 1;
+    }
   }
+  vertical-align: baseline; /* 2 */
 }
 
 /**
@@ -163,12 +167,20 @@ audio:not([controls]) {
   height: 0;
 }
 
+@if support-legacy-browser(ie, "9") {
+  /**
+   * Address `[hidden]` styling not present in IE 8/9.
+   */
+
+  [hidden] {
+    display: none;
+  }
+}
+
 /**
- * Address `[hidden]` styling not present in IE 8/9.
  * Hide the `template` element in IE, Safari, and Firefox < 22.
  */
 
-[hidden],
 template {
   display: none;
 }
@@ -297,13 +309,15 @@ h1 {
   }
 }
 
-/**
- * Address styling not present in IE 8/9.
- */
+@if support-legacy-browser(ie, "9") {
+  /**
+   * Address styling not present in IE 8/9.
+   */
 
-mark {
-  background: #ff0;
-  color: #000;
+  mark {
+    background: #ff0;
+    color: #000;
+  }
 }
 
 @if not $strict-normalize or support-legacy-browser(ie, "7") {
@@ -408,35 +422,39 @@ sub {
 /* Embedded content
    ========================================================================== */
 
-/**
- * Remove border when inside `a` element in IE 8/9.
- */
+@if support-legacy-browser(ie, "9") {
+  /**
+   * Remove border when inside `a` element in IE 8/9.
+   */
 
-img {
-  border: 0;
-  @if support-legacy-browser(ie, "7") {
-    /* Improve image quality when scaled in IE 7. */
-    -ms-interpolation-mode: bicubic;
+  img {
+    border: 0;
+    @if support-legacy-browser(ie, "7") {
+      /* Improve image quality when scaled in IE 7. */
+      -ms-interpolation-mode: bicubic;
+    }
   }
-}
 
-/**
- * Correct overflow displayed oddly in IE 9.
- */
+  /**
+   * Correct overflow displayed oddly in IE 9.
+   */
 
-svg:not(:root) {
-  overflow: hidden;
+  svg:not(:root) {
+    overflow: hidden;
+  }
 }
 
 /* Grouping content
    ========================================================================== */
 
-/**
- * Address margin not present in IE 8/9 and Safari 5.
- */
+@if support-legacy-browser(ie, "9") or support-legacy-browser(safari, "5") {
+  /**
+   * Address margin not present in IE 8/9 and Safari 5.
+   */
 
-figure {
-  margin: rhythm(1) $indent-amount;
+  figure {
+    margin: rhythm(1) $indent-amount;
+  }
 }
 
 /**
@@ -632,19 +650,23 @@ fieldset {
  */
 
 legend {
-  border: 0; /* 1 */
+  @if support-legacy-browser(ie, "9") {
+    border: 0; /* 1 */
+  }
   padding: 0; /* 2 */
   @if support-legacy-browser(ie, "7") {
     *margin-left: -7px; /* 3 */
   }
 }
 
-/**
- * Remove default vertical scrollbar in IE 8/9.
- */
+@if support-legacy-browser(ie, "9") {
+  /**
+   * Remove default vertical scrollbar in IE 8/9.
+   */
 
-textarea {
-  overflow: auto;
+  textarea {
+    overflow: auto;
+  }
 }
 
 /**
