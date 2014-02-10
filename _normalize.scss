@@ -57,7 +57,7 @@ $indent-amount: 40px !default;
 @import "compass/typography/vertical_rhythm";
 
 
-// To work around a bug in Compass 1.0.0-alpha.17, we override Compass'
+// To work around a bug in compass-core 1.0.0-alpha.17, we override Compass'
 // support-legacy-browser() function with a version of our own.
 // @TODO Remove this monkey patch after it's fixed in Compass.
 // @see https://github.com/chriseppstein/compass/pull/1524

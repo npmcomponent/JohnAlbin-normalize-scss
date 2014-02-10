@@ -16,8 +16,8 @@ Gem::Specification.new do |s|
   s.authors     = ['John Albin Wilkins']
   s.email       = 'virtually.johnalbin@gmail.com'
 
-  s.add_runtime_dependency('sass',    ">= 3.3.0-rc.1")
-  s.add_runtime_dependency('compass', ">= 1.0.0.alpha.13")
+  s.add_runtime_dependency('sass',          ">= 3.3.0-rc.1")
+  s.add_runtime_dependency('compass-core',  ">= 1.0.0.alpha.13")
 
   s.files       = %w[
     _normalize.scss
