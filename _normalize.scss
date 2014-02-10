@@ -61,6 +61,7 @@ $indent-amount: 40px !default;
 // support-legacy-browser() function with a version of our own.
 // @TODO Remove this monkey patch after it's fixed in Compass.
 // @see https://github.com/chriseppstein/compass/pull/1524
+// @see also https://github.com/chriseppstein/compass/pull/1520
 @function support-legacy-browser($browser, $min-version, $max-version: null, $threshold: $critical-usage-threshold) {
   @if not index($supported-browsers, $browser) {
     @return false;
