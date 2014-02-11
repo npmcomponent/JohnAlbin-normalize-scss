@@ -1,4 +1,7 @@
-=== HEAD
+=== normalize-scss 3.0.0-alpha.2+normalize.3.0.0 (February 11, 2014)
+
+* Upgrade to Normalize.css 3.0.0.
+* Add additional support-legacy-browser() so IE 8/9/10 and Safari 5 support can be removed.
 
 === normalize-scss 3.0.0-alpha.1+normalize.2.1.3 (January 22, 2014)
 
