@@ -1,8 +1,8 @@
 $browser-minimum-versions: (
   'chrome':  null,
   'firefox': null,
-  'ie':      '11', // The Safari 5-specific rules are also needed for IE 9.
-  'safari':  '6',
+  'ie':      '11',
+  'safari':  null,
   'opera':   null
 ) !global;
 
