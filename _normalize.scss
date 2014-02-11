@@ -117,25 +117,24 @@ body {
 /* HTML5 display definitions
    ========================================================================== */
 
-@if support-legacy-browser(ie, "9") {
-  /**
-   * Correct `block` display not defined in IE 8/9.
-   */
+/**
+ * Correct `block` display not defined in IE 8/9. Correct `block` display
+ * not defined on `summary` and `details` in IE and Firefox and on `main` in IE.
+ */
 
-  article,
-  aside,
-  details,
-  figcaption,
-  figure,
-  footer,
-  header,
-  hgroup,
-  main,
-  nav,
-  section,
-  summary {
-    display: block;
-  }
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
 }
 
 /**
@@ -167,9 +166,9 @@ audio:not([controls]) {
   height: 0;
 }
 
-@if support-legacy-browser(ie, "9") {
+@if support-legacy-browser(ie, "10") {
   /**
-   * Address `[hidden]` styling not present in IE 8/9.
+   * Address `[hidden]` styling not present in IE 8/9/10.
    */
 
   [hidden] {
@@ -211,7 +210,7 @@ a:hover {
    ========================================================================== */
 
 /**
- * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ * Address styling not present in IE, Safari 5, and Chrome.
  */
 
 abbr[title] {
@@ -424,9 +423,9 @@ sub {
 /* Embedded content
    ========================================================================== */
 
-@if support-legacy-browser(ie, "9") {
+@if support-legacy-browser(ie, "10") {
   /**
-   * Remove border when inside `a` element in IE 8/9.
+   * Remove border when inside `a` element in IE 8/9/10.
    */
 
   img {
@@ -436,14 +435,14 @@ sub {
       -ms-interpolation-mode: bicubic;
     }
   }
+}
 
-  /**
-   * Correct overflow displayed oddly in IE 9.
-   */
+/**
+ * Correct overflow displayed in IE.
+ */
 
-  svg:not(:root) {
-    overflow: hidden;
-  }
+svg:not(:root) {
+  overflow: hidden;
 }
 
 /* Grouping content
@@ -510,7 +509,7 @@ textarea {
 }
 
 /**
- * Address `overflow` set to `hidden` in IE 8/9/10.
+ * Address `overflow` set to `hidden` in IE.
  */
 
 button {
@@ -520,7 +519,7 @@ button {
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
  * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Firefox, IE 8+, and Opera
+ * Correct `button` style inheritance in Firefox, IE, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
 
@@ -578,23 +577,25 @@ input {
   line-height: normal;
 }
 
-/**
- * It's recommended that you don't attempt to style these elements.
- * Firefox's implementation doesn't respect box-sizing, padding, or width.
- *
- * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10.
- * 3. Remove excess padding in IE 7.
- *    Known issue: excess padding remains in IE 6.
- */
+@if support-legacy-browser(ie, "10") {
+  /**
+   * It's recommended that you don't attempt to style these elements.
+   * Firefox's implementation doesn't respect box-sizing, padding, or width.
+   *
+   * 1. Address box sizing set to `content-box` in IE 8/9/10.
+   * 2. Remove excess padding in IE 8/9/10.
+   * 3. Remove excess padding in IE 7.
+   *    Known issue: excess padding remains in IE 6.
+   */
 
-input[type="checkbox"],
-input[type="radio"] {
-  @include box-sizing(border-box); /* 1 */
-  padding: 0; /* 2 */
-  @if support-legacy-browser(ie, "7") {
-    *height: 13px; /* 3 */
-    *width: 13px; /* 3 */
+  input[type="checkbox"],
+  input[type="radio"] {
+    @include box-sizing(border-box); /* 1 */
+    padding: 0; /* 2 */
+    @if support-legacy-browser(ie, "7") {
+      *height: 13px; /* 3 */
+      *width: 13px; /* 3 */
+    }
   }
 }
 
@@ -646,7 +647,7 @@ fieldset {
 }
 
 /**
- * 1. Correct `color` not being inherited in IE 8/9.
+ * 1. Correct `color` not being inherited in IE.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  * 3. Correct alignment displayed oddly in IE 6/7.
  */
@@ -661,14 +662,12 @@ legend {
   }
 }
 
-@if support-legacy-browser(ie, "9") {
-  /**
-   * Remove default vertical scrollbar in IE 8/9.
-   */
+/**
+ * Remove default vertical scrollbar in IE.
+ */
 
-  textarea {
-    overflow: auto;
-  }
+textarea {
+  overflow: auto;
 }
 
 /**
