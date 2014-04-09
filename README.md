@@ -1,3 +1,4 @@
+*This repository is a mirror of the [component](http://component.io) module [johnalbin/normalize-scss](http://github.com/johnalbin/normalize-scss). It has been modified to work with NPM+Browserify. You can install it using the command `npm install npmcomponent/johnalbin-normalize-scss`. Please do not open issues or send pull requests against this repo. If you have issues with this repo, report it to [npmcomponent](https://github.com/airportyh/npmcomponent).*
 ## Latest downloadable version
 
 The latest release of _normalize.scss for Sass 3.3 and Compass 1.0 is: [3.0.0-alpha.2+normalize.3.0.0](https://github.com/JohnAlbin/normalize-scss/releases/tag/3.0.0-alpha.2%2Bnormalize.3.0.0).
